@@ -13,6 +13,9 @@
     @include mobile() {
         height: 400px;
     }
+    @include tablet() {
+        height: 400px;
+    }
 
     @include desktop() {
         max-width: 1600px;
@@ -31,6 +34,12 @@
         margin-bottom: 30px;
 
         @include mobile() {
+            width: 360px;
+            font-size: 26px;
+            line-height: 1.6;
+        }
+
+        @include tablet() {
             width: 360px;
             font-size: 26px;
             line-height: 1.6;

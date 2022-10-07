@@ -1,12 +1,13 @@
 .header {
     border-bottom: 1px solid #ececec;
 
-    &__container {
-            display: flex;
-        }
+   
     &__contacts {
-    display: flex;
-    align-items: center;
+        display: flex;
+        align-items: center;
+        @include mobile() {
+            display: none;
         }
-
+    }
+    
 }

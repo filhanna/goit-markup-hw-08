@@ -11,6 +11,10 @@
             flex-direction: column;
             align-items: center;
         }
+        @include tablet() {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
     }
     
     &__address-item {
@@ -32,9 +36,13 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    &__adress-box{
+    &__addres-box{
+        
         @include mobile() {
             text-align: center;
+        }
+        @include tablet() {
+            margin-bottom: 60px;
         }
     }
     &__color-adress {

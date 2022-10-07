@@ -16,6 +16,7 @@
         @include mobile() {
             text-align: center;
         }
+
     }
     &__text {
         line-height: 1.71;
@@ -28,6 +29,10 @@
 
     &__item {
         display: block;
+        @include tablet() {
+            width: calc((100% - 1 * 30px) / 2);
+            
+        }
     }
     
     &__list {
@@ -36,6 +41,10 @@
 
         @include mobile() {
             flex-direction: column;
+        }
+        @include tablet() {
+            display: flex;
+            flex-wrap: wrap;
         }
     }
 

@@ -9,6 +9,7 @@ body {
     display: block;
     padding-top: 94px;
     padding-bottom: 94px;
+
     @include mobile() {
             padding-top: 60px;
         }
