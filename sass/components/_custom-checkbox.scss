@@ -1,0 +1,13 @@
+.custom-checkbox {
+    width: 16px;
+    height: 15px;
+    background-image: url(../image/icons/off.svg);
+    transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.register__form-checkbox:checked+.custom-checkbox {
+    background-image: url(../image/icons/on.svg);
+}
+
+.register__form-checkbox:checked+.custom-checkbox {
+    border-color: var(--activity-color);
+}

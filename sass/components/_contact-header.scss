@@ -1,0 +1,31 @@
+.header__group {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    margin-left: auto;
+    align-items: center;
+}
+.link {
+    display: flex;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    list-style-type: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--secondary-text-color);
+    align-items: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover {
+            color: var(--activity-color);
+        }
+    
+        &:focus {
+            color: var(--activity-color);
+        }
+}

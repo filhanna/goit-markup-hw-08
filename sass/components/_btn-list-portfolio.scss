@@ -1,0 +1,39 @@
+.btn__list {
+    list-style-type: none;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn__list .btn__list-button {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    border: 1px solid transparent;
+    background: #f5f4fa;
+    border-radius: 4px;
+    font-style: normal;
+    padding: 6px 22px;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn__list .btn__list-button:hover,
+.btn__list .btn__list-button:focus {
+    color: var(--white-text-color);
+    background-color: var(--activity-color);
+}
+
+.btn__list-button:hover {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+}

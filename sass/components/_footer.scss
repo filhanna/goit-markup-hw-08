@@ -1,0 +1,61 @@
+.footer {
+    background-color: rgba(47, 48, 58, 1);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+
+    &__container {
+            display: flex;
+            align-items: baseline;
+        }
+    
+&__address-item {
+    list-style-type: none;
+    padding: 0;
+}
+&__adress-contact {
+    display: block;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    margin-bottom: 9px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__color-adress {
+    margin-bottom: 9px;
+    font-style: normal;
+    width: 231px;
+    height: 21px;
+    left: 215px;
+    top: 2205px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--white-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__color-adress:hover {
+    color: var(--activity-color);
+}
+
+&__color-adress:focus {
+    color: var(--activity-color);
+}
+
+&__adress-contact:hover {
+    color: var(--activity-color);
+}
+
+&__adress-contact:focus {
+    color: var(--activity-color);
+}
+
+&__adress-contact:last-child {
+    margin-bottom: 0;
+}
+}

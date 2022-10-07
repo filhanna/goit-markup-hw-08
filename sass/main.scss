@@ -1,0 +1,43 @@
+
+//utils styles
+@import "./utils/vars";
+@import "./utils/hite-title";
+@import "./utils/hide-text-modal";
+
+//base styles
+@import "./base/reset";
+@import "./base/base";
+@import "./base/container";
+@import "./base/bakdrop-modal";
+
+//layouts styles
+
+//components styles
+@import "./components/header";
+@import "./components/logo-header";
+@import "./components/icon-header";
+@import "./components/nav-header";
+@import "./components/contact-header";
+@import "./components/hero";
+@import "./components/btn";
+@import "./components/feature";
+@import "./components/work";
+@import "./components/team";
+@import "./components/client";
+@import "./components/footer.logo";
+@import "./components/footer";
+@import "./components/footer-social";
+@import "./components/footer-form";
+@import "./components/modal";
+@import "./components/register-form-modal";
+@import "./components/modal-btn-close";
+@import "./components/custom-checkbox";
+
+
+
+//Portfolio
+
+@import "./components/btn-list-portfolio";
+@import "./components/cards-list-portfolio";
+@import "./components/cards-overley-portfolio";
+

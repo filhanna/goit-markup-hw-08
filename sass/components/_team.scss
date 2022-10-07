@@ -1,0 +1,87 @@
+.team {
+    background-color: var(--secondary-background-color);
+    padding-bottom: 94px;
+
+&__caption {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin-bottom: 50px;
+
+        color: var(--primary-text-color);
+    }
+&__cards {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+&__list {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+
+    background-color: var(--secondary-background-color);
+}
+&__name {
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.16;
+
+    margin-bottom: 10px;
+}
+&__job {
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.16;
+    margin-bottom: 16px;
+}
+&__teammate {
+    background: var(--primary-background-color);
+
+    background: #ffffff;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+&__social {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+&__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    background-color: var(--primary-background-color);
+    border-radius: 50%;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__icon {
+    fill: var(--social-icon-color);
+}
+&__link:hover,
+&__link:focus {
+    background-color: var(--activity-color);
+}
+&__link:hover .team__icon,
+&__link:focus .team__icon {
+    fill: var(--primary-background-color);
+}
+}

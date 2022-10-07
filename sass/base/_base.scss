@@ -1,0 +1,28 @@
+body {
+    color: var(--primary-text-color);
+    background-color: rgba(255, 255, 255, 1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+.section {
+    display: block;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.link {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    
+    &:hover .icon--activation,
+        &:focus .icon--activation {
+            fill: var(--activity-color);
+        }
+}
+
+
+.current {
+    color: var(--activity-color);
+}
