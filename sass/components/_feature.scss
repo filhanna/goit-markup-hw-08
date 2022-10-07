@@ -1,59 +1,69 @@
 .feature{
     .section & {
-            background-color: var(--secondary-background-color);
-        }
+        background-color: var(--secondary-background-color);
+       
+    }
     
     &__title {
-            font-weight: 700;
-            line-height: 1.17;
-            font-size: 14px;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            color: var(--primary-text-color);
-            margin-bottom: 10px;
-        }
-        &__text {
-            line-height: 1.71;
-            letter-spacing: 0.03em;
-            font-weight: 400;
-            font-size: 14px;
-            font-style: normal;
-            color: var(--secondary-text-color);
-        }
-    
-        &__item {
-            display: block;
-         }
-           &__list {
-           display: flex;
-                    gap: 30px;
-        }
+        font-weight: 700;
+        line-height: 1.17;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--primary-text-color);
+        margin-bottom: 10px;
 
-        &__title::before {
-            content: '';
-            display: block;
-    
-            height: 120px;
-            background-color: var(--secondary-background-color);
-    
-            background-repeat: no-repeat;
-            background-position: center;
-    
-            margin-bottom: 30px;
+        @include mobile() {
+            text-align: center;
         }
-        &__title.detalis::before {
-            background-image: url(../image/icons/antenna1.svg);
-        }
+    }
+    &__text {
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        font-weight: 400;
+        font-size: 14px;
+        font-style: normal;
+        color: var(--secondary-text-color);
+    }
+
+    &__item {
+        display: block;
+    }
     
-        &__title.punktuality::before {
-            background-image: url(../image/icons/clock1.svg);
+    &__list {
+        display: flex;
+        gap: 30px;
+
+        @include mobile() {
+            flex-direction: column;
         }
-    
-        &__title.planning::before {
-            background-image: url(../image/icons/diagram1.svg);
-        }
-    
-        &__title.technology::before {
-            background-image: url(../image/icons/astronaut1.svg);
-        }
+    }
+
+    &__title::before {
+        content: '';
+        display: block;
+
+        height: 120px;
+        background-color: var(--secondary-background-color);
+
+        background-repeat: no-repeat;
+        background-position: center;
+
+        margin-bottom: 30px;
+    }
+    &__title.detalis::before {
+        background-image: url(../image/icons/antenna1.svg);
+    }
+
+    &__title.punktuality::before {
+        background-image: url(../image/icons/clock1.svg);
+    }
+
+    &__title.planning::before {
+        background-image: url(../image/icons/diagram1.svg);
+    }
+
+    &__title.technology::before {
+        background-image: url(../image/icons/astronaut1.svg);
+    }
 }

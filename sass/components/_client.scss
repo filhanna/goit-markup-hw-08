@@ -4,19 +4,33 @@
             font-size: 36px;
             line-height: 1.16;
             text-align: center;
-    
             margin-bottom: 50px;
+
+            @include mobile() {
+                font-size: 28px;
+
+            }
         }
 &__list {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    @include mobile() {
+            display: flex;
+            flex-wrap: wrap;
+            // width: calc((100% - 2 * 30px) / 2);
+            // margin: 15px; 
+        }
 }
 &__item {
     display: flex;
 
     width: 170px;
     height: 92px;
+    @include mobile() {
+        flex-grow: 1;
+    }
+    
 }
 &__link {
     display: flex;

@@ -8,6 +8,9 @@
     text-decoration: none;
     line-height: 1.19;
     margin-bottom: 20px;
+    @include mobile() {
+        text-align: center;
+    }
 }
 .footer__part-logo {
     color: rgba(255, 255, 255, 1);

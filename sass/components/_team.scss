@@ -25,6 +25,9 @@
     padding: 0;
 
     background-color: var(--secondary-background-color);
+    @include mobile() {
+            flex-direction: column;
+        }
 }
 &__name {
     text-align: center;

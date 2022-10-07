@@ -1,7 +1,8 @@
-.footer__social {
-    margin-left: 70px;
+.footer__social {   
     width: 206px;
-    height: 80px;
+    @include desktop() {
+        margin-left: 70px;  
+    }
 }
 
 .footer__social-title {
@@ -15,11 +16,18 @@
 
     align-self: flex-start;
     margin-bottom: 20px;
+    @include mobile() {
+        padding-top: 60px;
+        text-align: center;
+    }
 }
 
 .footer__social-list {
     display: flex;
     gap: 10px;
+    @include mobile() {
+        align-items: center;
+    }
 }
 
 .footer__social-item {

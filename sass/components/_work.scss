@@ -1,6 +1,9 @@
 .work {
     padding-top: 0;
     padding-bottom: 94px;
+    @include mobile() {
+            display: none;
+        }
 
 &__list {
         list-style-type: none;

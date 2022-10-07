@@ -1,6 +1,21 @@
 .footer__form {
     display: block;
-    margin-left: auto;
+    & > form {
+        @include mobile() {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    @include mobile() {
+        margin-top: 60px;
+        width: 100%;
+    }
+    @include desktop() {
+        margin-left: auto;
+    }
+    
 }
 
 .footer__form-text {
@@ -11,11 +26,21 @@
     text-transform: uppercase;
     color: var(--white-text-color);
     margin-bottom: 20px;
+    @include mobile() {
+        text-align: center;
+    }
 }
 
 .footer__form-label {
-    display: inline-block;
-    margin-right: 12px;
+    @include mobile(){
+        display: block;
+        margin-bottom: 20px;
+        align-self: stretch;
+    }
+    @include desktop() {
+        display: inline-block;
+        margin-right: 12px;
+    }
 }
 
 .footer__form-input {
@@ -28,6 +53,9 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     box-sizing: border-box;
+    @include mobile() {
+        width: 100%;
+    }
 }
 
 .footer__form-button {
