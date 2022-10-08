@@ -1,7 +1,9 @@
 .header__group {
     display: flex;
     list-style-type: none;
-    margin-left: auto;
+    @include mobile() {
+        display: none;
+    }
     
     @include tablet() {
         flex-direction: column;
@@ -12,6 +14,7 @@
     @include desktop() {
         gap: 50px;
         align-items: center;
+        margin-left: auto;
     }
 }
 .link {

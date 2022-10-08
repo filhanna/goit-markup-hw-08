@@ -17,23 +17,27 @@
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                 url(../image/hero/Img_m@2x.png);
         }
-    }
+    
     @include tablet() {
         height: 400px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                 url(../image/hero/Img_t@2x.png);
-        
-    }
+        }
+    
+    
     
 
     @include desktop() {
         max-width: 1600px;
         height: 600px;
+    
+    
         @include isRetinaDisplay() {
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                     url(../image/hero/Img_d@2x.png);
+                }
             }
-    }
+
  
     &__slogan {
         font-weight: 900;
@@ -66,4 +70,4 @@
         }
         
     }
-
+}
