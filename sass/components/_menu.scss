@@ -8,7 +8,7 @@
     background-color: #FFFFFF;
     z-index: 999;
 
-    transform: translateX(100%);
+    transform: translateX(120%);
     transition: transform 250ms ease-in-out;
 }
 
@@ -21,6 +21,13 @@
     top: 16px;
     right: 16px;
     color: #fff;
+
+    @include tablet() {
+        display: none;
+    }
+    @include desktop() {
+        display: none;
+    }
 }
 
 .mobile-menu {
