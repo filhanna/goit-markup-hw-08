@@ -16,15 +16,20 @@
 
     @include mobile() {
         height: 400px;
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url('../image/hero/img_m@2x.jpg');
-        }
+        @include isRetinaDisplay() {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url('../image/hero/img_m@2x.jpg');
+             }
+     }
     
     @include tablet() {
         height: 400px;
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url('../image/hero/img_t@2x.jpg');
-        }
+        @include isRetinaDisplay() {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                     url('../image/hero/img_t@2x.jpg');
+             }
+        
+     }
     
     
     
