@@ -94,6 +94,14 @@
     letter-spacing: 1.7;
 
     color: var(--secondary-text-color);
+
+    @include mobile() {
+        font-size: 12px;
+    }
+
+    @include tablet() {
+        font-size: 12px;
+    }
 }
 
 .register__form-link {

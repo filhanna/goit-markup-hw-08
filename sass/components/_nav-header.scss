@@ -57,6 +57,11 @@
             border-radius: 2px;
             height: 4px;
         }
+        &__link.current:hover,
+        &__link.current:focus {
+            color: var(--activity-color);
+        }
+
 }
 .main-nav {
     display: flex;
