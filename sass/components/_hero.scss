@@ -46,6 +46,7 @@
         
         color: var(--white-text-color);
         text-align: center;
+        max-width: 360px;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         margin-left: auto;
@@ -53,19 +54,17 @@
         margin-bottom: 30px;
 
         @include mobile() {
-            width: 360px;
             font-size: 26px;
             line-height: 1.6;
         }
 
         @include tablet() {
-            width: 360px;
             font-size: 26px;
             line-height: 1.6;
         }
         
         @include desktop() {
-            width: 696px;
+            max-width: 696px;
             font-size: 44px;
             line-height: 1.3;
             
