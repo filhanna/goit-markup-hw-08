@@ -3,9 +3,10 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    height: 600px;
     background-color: #c4c4c4;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../image/hero/img_d@1x.jpg);
+        url('../image/hero/img_d@1x.jpg');
         
     background-repeat: no-repeat;
     background-position: center;
@@ -16,13 +17,13 @@
     @include mobile() {
         height: 400px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../image/hero/img_m@2x.jpg);
+                url('../image/hero/img_m@2x.jpg');
         }
     
     @include tablet() {
         height: 400px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../image/hero/img_t@2x.jpg);
+                url('../image/hero/img_t@2x.jpg');
         }
     
     
@@ -30,10 +31,10 @@
 
     @include desktop() {
         max-width: 1600px;
-        height: 600px;
+        
         @include isRetinaDisplay() {
                 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                    url(../image/hero/img_d@2x.jpg);
+                    url('../image/hero/img_d@2x.jpg');
             }
     }
     
