@@ -10,7 +10,7 @@
     background-color: #FFFFFF;
     z-index: 999;
 
-    transform: translateX(101%);
+    transform: translateX(120%);
     transition: transform 250ms ease-in-out;
 }
 
@@ -79,13 +79,16 @@
     font-size: 18px;
     line-height: 22px;
     color: var(--activity-color);
-    gap: 20px;
+    
 
 }
 
-.mobile__link{
-    
+.mobile__link:not(:last-child){
     border-right: 2px solid rgba(33, 33, 33, 0.2);
+    font-size: 18px;
     
 
+}
+.mobile__link{
+    padding: 0 10px;
 }

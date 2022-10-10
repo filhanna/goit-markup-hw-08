@@ -61,6 +61,9 @@
         &__link.current:focus {
             color: var(--activity-color);
         }
+        &__link.current{
+            color: var(--activity-color);
+        }
 
 }
 .main-nav {
